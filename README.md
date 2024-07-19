@@ -2,7 +2,7 @@
 A project for practicing API development usign java with spring
 
 ## Class Diagram
-```
+```mermaid
 classDiagram
     class User {
         -String username
