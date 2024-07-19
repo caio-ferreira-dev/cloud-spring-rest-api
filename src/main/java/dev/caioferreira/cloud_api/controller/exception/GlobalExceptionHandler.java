@@ -24,7 +24,7 @@ public class GlobalExceptionHandler {
         return new ResponseEntity<String>("Resource ID not found", HttpStatus.NOT_FOUND);
     }
 
-    @ExceptionHandler(NoSuchElementException.class)
+    @ExceptionHandler(Throwable.class)
     public ResponseEntity<String> handleUnexpectedException(NoSuchElementException unexpectedException) {
         var message = "Unexpected server error, see the logs for further information.";
         logger.error(message, unexpectedException);
